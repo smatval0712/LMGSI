@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+</head>
+    <body>
+        <h2>Recorra nuestro sitio web</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página inicial</a></li>
+                <li><a href="../bd/sql/recogeDatos.html">Recogida de datos</a></li>
+                <li><a href="resultados.html">Tabla de resultados</a></li>
+                <li><a href="../blog/blog.html">Nuestro blog</a></li>
+            </ul>
+        </nav>
+        <h1>Ejemplo de tabla HTML</h1>
+
+        <p>En primer lugar observe <b>la siguiente figura:</b></p>
+        <img src="../figuras/tabla-examen-html.png" alt="tabla examen" width="434" height="124">
+        <p>Ahora codifique una tabla HTML que represente la información de la figura anterior. Le recordamos que lo importante es la semántica, no la presentación.</p>
+        <table border="1" cellspacing="0" cellpadding="3">
+                    <caption><strong>Resultados Módulo</strong></caption>
+                    <tr>
+                        <th align="left">Examen</th>
+                        <th align="right">Aprobados</th>
+                        <th align="right">Suspensos</th>
+                        <th align="right">No Presentados</th>
+                        <th align="right">Total</th>
+                    </tr>
+                    <tr>
+                        <th align="left">1ª Ev</th>
+                        <td colspan="2" align="center" bgcolor="#cccccc">8</td>
+                        <td align="center">14</td>
+                        <td align="right">30</td>
+                    </tr>
+                    <tr>
+                        <th align="left">2ª Ev</th>
+                        <td rowspan="2" align="center" bgcolor="#cccccc">9</td>
+                        <td align="center">7</td>
+                        <td align="center">9</td>
+                        <td align="right">26</td>
+                    </tr>
+                    <tr>
+                        <th align="left">3ª Ev</th>
+                        <td rowspan="2" colspan="2" align="center" bgcolor="#cccccc">6</td>
+                        <td align="right">21</td>
+                    </tr>
+                    <tr>
+                        <th align="left">Final</th>
+                        <td align="center">6</td>
+                        <td align="right">18</td>
+                    </tr>
+                </table>
+        <p><strong>Aviso:</strong> Aquí debe aparecer su tabla HTML.</p>
+    </body>
+</html>
