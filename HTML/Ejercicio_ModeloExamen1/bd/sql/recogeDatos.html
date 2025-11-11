@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recoge datos</title>
+</head>
+<body>
+    <h1>Formulario de recogida de datos</h1>
+    <form action="/procesa/altas.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos de la compra</legend>
+
+            <p>
+                <label>Número de unidades
+                    <input type="number" name="unidades" value="1" max="1000" min="1" step="any">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos Personales</legend>
+        </fieldset>
+
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>

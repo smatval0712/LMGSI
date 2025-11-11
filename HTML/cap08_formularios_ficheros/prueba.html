@@ -8,8 +8,59 @@
 <body>
     <h1>Ejemplo inicial formulario</h1>
 
-    <form action="http:/midominio.com/altas" method="post">
+    <form action="http:/midominio.com/altas" method="post" enctype="multipart/form-data">
 
+
+        <p>
+            <label for="provincia">Seleccione provincia <br></label>
+                <select name="provincia" id="provincia">
+                    <option value="NInguna" disabled selected>Ninguna</option>
+                    <option value="CA">Cádiz</option>
+                    <option value="SE">Sevilla</option>
+                    <option value="HU">Huelva</option>
+                    <option value="MA">Málaga</option>
+                    <option value="AL">Almería</option>
+                </select>
+            
+            
+
+        </p>
+        <p>
+            <label>Introduce su queja <br> 
+                <input type="text" name="queja" size="50" minlength="20"> 
+            </label>
+
+        </p>
+        <p>
+            <label>Introduce su queja <br> 
+                <textarea name="quejas" cols="72" rows="12">Rellene con su queja</textarea> 
+            </label>
+
+        </p>
+
+        <p> Seleccione sus preferencias <br>
+            <label><input type="checkbox" name="preferencias" value="C" checked>Cine</label>
+            <label><input type="checkbox" name="preferencias" value="T">Teatro</label>
+            <label><input type="checkbox" name="preferencias" value="V">Viajes</label>
+        </p>
+
+        <p>
+            <label> Seleccione un color <br>
+             <input type="color" name="">
+            </label>
+        </p>
+        
+        <p>
+            <label> Factura de compra <br>
+                <input type="file" name="factura"></input>
+            </label>
+        </p>
+
+        <p> Seleccione su módulo preferido <br>
+            <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de marcas</label>
+            <label><input type="radio" name="modulo" value="SI">Sistemas</label>
+            <label><input type="radio" name="modulo" value="BD">Bases de datos</label>
+        </p>
 
         <p>
             <label for="usuario">Usuario</label><br>
@@ -23,12 +74,12 @@
 
         <p>
             <label> Fecha compra <br>
-                <input type="date" name="fcompra">
+                <input type="date" name="fcompra" required>
             </label>
         </p>
         <p>
             <label> Correo Electrónico <br>
-                <input type="email" name="correo">
+                <input type="email" name="correo" placeholder="Use su email personal">
             </label>
         </p>
 
