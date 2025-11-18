@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Página ppal examen</title>
+</head>
+<body>
+
+  <nav>
+    <h2>Zona de navegación de nuesta web.</h2>
+    <ul>
+      <li><a href="">Página inicial</a></li>
+      <li><a href="">Nuestro blog</a></li>
+      <li><a href="">Resultados</a></li>
+      <li><a href="">Ayuda HTML</a></li>
+    </ul>
+  </nav>
+
+  <h1>Encuesta alumando</h1>
+
+  <form action="">
+    <fieldset>
+      <legend>Datos iniciales</legend>
+      <p>Seleccione a continuación cuales son los temas de su interés:</p>
+      <p>
+          <label><input type="checkbox" name="interes"value="HTML">HTML</label><br>
+          <label><input type="checkbox" name="interes"value="CSS">Estilos CSS</label><br>
+          <label><input type="checkbox" name="interes"value="JaVAsCRIPT">El lenguaje JaVAsCRIPT</label><br>
+      </p>
+    
+      <p>indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019)  <br>
+        <label><input type="date" name="Fecha" min="2019-09-15"></label>
+      </p>
+
+      <p>Adjunta dos fotos, una tipo DNI y otra de cuerpo entero <br>
+        <label><input type="file" name="archivos" multiple></label>
+      </p>
+      
+      <p> Vamos a pintar la clase: seleccione el color preferido (por defecto rojo)
+        <label><input type="color" name="color" value="#FF0000"></label>
+      </p>
+
+      <p>Indique si dispone de ella, su página web:
+        <label><input type="url" name="url"></label>
+      </p>
+
+      <p>
+        Indique su código de alumno: 
+        <label><input type="text" name="codigo" placeholder="ver patrón.."></label>
+        Formato: tres mayusculas seguidas de 1 o 2 dígitos.
+      </p>
+
+      <p>
+        Seleccione zona donde víve <br> 
+        <label><input type="radio" name="zona" value="Jerez" checked>Jerez <em>(*Valor por defecto)</em></label> <br>
+        <label><input type="radio" name="zona" value="Pedanias">Pedanías: Cuartillos, Estella, etc.. </label> <br>
+        <label><input type="radio" name="zona" value="Fuera">Fuera de Jerez: El Puerto, Chipiona ,etc.. </label> <br>
+      </p>
+
+        <p>
+          <label><input type="checkbox" name="acepta" required>Acepto recibir noticaciones del estado de la encuesta (campo obligatorio)</label>
+        </p>
+      
+    </fieldset>
+    <input type="submit" value="Evnviar">
+    <input type="reset" value="Borrar">
+  </form>
+
+</body>
+</html>
+
+      
+
+      
+        
+      
+
+
+      
+        
+          
+          
+        
+  
+
+  
+
+  
+    
+      
+      
+    
+    
+      
+      
+    
+  
+
+

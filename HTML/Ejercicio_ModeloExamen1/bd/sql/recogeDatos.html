@@ -12,13 +12,40 @@
             <legend>Datos de la compra</legend>
 
             <p>
+                Selecciona marca <br>
+                <label><input type="radio" name="marca"value="A">Marca A</label>
+                <label><input type="radio" name="marca"value="B">Marca B</label>
+                <label><input type="radio" name="marca"value="C">Marca C</label>
+                <label><input type="radio" name="marca"value="D">Marca D</label>
+            </p>
+
+            <p>
                 <label>Número de unidades
                     <input type="number" name="unidades" value="1" max="1000" min="1" step="any">
                 </label>
             </p>
+            <p>
+                Adjuntar 2 ficheros: factura de compra y fotocopia del DNI <br>
+                <label><input type="file" name="ficheros" multiple>DNI y Factura</label>
+            </p>
+            <p>
+                Fecha compra <br>
+                <label><input type="date" name="FechaCompra"></label>
+            </p>
         </fieldset>
         <fieldset>
             <legend>Datos Personales</legend>
+            <p>
+                Usuario
+                <label><input type="email" name="correo" placeholder="Correo Electrónico"></label>
+            </p>
+            <p>
+                Código
+                <label><input type="text" name="codigo" required></label>
+                * Campo obligatorio. Formato: 2 mayúsculas, un guión, y entre 2 y 5 caracteres que pueden ser indistíntamente minúsculas o dígitos. Por jemplo, AB-123, o ZA-ab12z
+            </p>
+
+
         </fieldset>
 
 
