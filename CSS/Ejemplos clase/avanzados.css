@@ -1,0 +1,38 @@
+/* avanzados.css */
+
+
+/*atributos*/
+[title]{
+    background-color: red;
+}
+dfn[title]{
+    background-color: pink;
+}
+
+
+/* sibling, que sean del mismo padre (al mismo nivel) y ademas el h4 tenga antes un h3 aunque no directamente (puede haber otros en medio) */
+
+h3 ~ h4 {
+    background-color: lightgoldenrodyellow;
+}
+
+
+/* dentro de */
+article p{
+    color: blue;
+}
+
+/* hijo de */
+article > p{
+    color: red;
+    text-align: center;
+}
+/* adyacente, ejemplo, cuando haya un p que justo antes tiene un h1 */
+h1+p,
+h2+p{
+    color: lime;
+}
+
+
+/*
+
