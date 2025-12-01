@@ -1,0 +1,21 @@
+        Recorra nuestro sitio web
+        
+            Confirma Reserva
+            Memoria del proyecto
+            Comparativa herramientas
+        
+    
+
+    Comparativa herramientas
+
+    Aviso: Codificar tras realizar los apartados 1 Y 2 del examen
+    
+    Justo a continuación tiene una figura con una imagen de una tabla: NO LA BORRE
+        
+    
+
+    Aquí  debe aparecer la tabla HTML
+    En esta sección debe codificar una tabla HTML que debe ser equivalente a la de la figura anterior cuanto a la información que se muestra (no en su presentación).
+
+    
+    <!-- Aquí debajo debajo debe aparecer la tabla HTML-->

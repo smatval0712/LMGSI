@@ -1,0 +1,41 @@
+  Recorra nuestro sitio web
+        
+            Confirma Reserva
+            Memoria del proyecto
+            Comparativa herramientas
+        
+
+        Anuncios
+        
+
+
+    Formulario de Alta
+
+    
+        
+            Datos alta
+            
+                Indique el localizador de su reserva 
+                  *obligatorio
+            
+            
+                Indique la hora de llegada estimada (anterior a las 20:30) 
+                
+            
+             Tipo de habitación  (por defecto doble)
+                Individual 
+                Doble 
+                Camiliar 
+            
+
+            
+                Seleccione las comidas 
+                 
+                    Desayuno
+                    Almuerzo
+                    Merienda
+                    Cena
+                 ** (puede elegir varias del desplegable)
+            
+            
+                Teléfono de contacto 

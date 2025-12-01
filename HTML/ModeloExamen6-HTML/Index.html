@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de inicio</title>
+</head>
+<body>
+
+    <nav>
+        <h2>Recorra nuestro sitio web</h2>
+        <ul>
+            <li><a href="Index.html">Confirma Reserva</a></li>
+            <li><a href="memoria/proyecto/ia.html">Memoria del proyecto</a></li>
+            <li>Comparativa <a href="herramientas/comparativa.html">herramientas</a></li>
+        </ul>
+    </nav>
+
+        <aside>
+            <h2>Anuncios</h2>
+            <img src="Figuras/Anuncios/google-fiber.jpg" alt="Google fiber" width="300" height="234">
+            <img src="Figuras/Anuncios/google-gulp.png" alt="google gulp" width="300" height="234">
+        </aside>
+        
+
+    <form action="/login/altas.php" method="get">
+        <fieldset>
+            <legend>Datos Alta</legend>
+            <p>
+                Indique el localizador de su reserva <br>
+                <label>
+                    <input type="text" required></input>
+                </label>
+                <em>*obligatorio</em>
+            </p>
+            <p>
+                Indique la hora de llegada estimada (anterior a las 20:30) <br>
+                <label><input type="time" name="hora" id="hora"></label>
+            </p>
+            <p>
+                Tipo de habitación  <em>(por defecto doble)</em> <br>
+                <label><input type="radio" name="tipo" value="Ind" checked>Individual </input></label><br>
+                <label><input type="radio" name="tipo" value="Dob">Doble </input></label><br>
+                <label><input type="radio" name="tipo" value="Fam">Familiar </input></label><br>
+            </p>
+            <p>
+                <label for="comidas"> Selecciona las comidas <br>
+                    <select name="comidas" id="comidas" multiple size="1">
+                        <option value="DES" selected>Desayuno</option>
+                        <option value="AL">Almuerzo</option>
+                        <option value="MER">Merienda</option>
+                        <option value="CEN">Cena</option>
+                    </select>
+                    <em>**(puede elegir varias del desplegable)</em>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Teléfono de contacto <br>
+                    <input type="tel" name="telefono" placeholder="123456789">
+                
+                </label>
+            </p>
+
+        </fieldset>
+
+            <p>
+                <input type="submit" value="Alta">
+                <input type="reset" value="Borrar">
+            </p>
+    </form>
+</body>
+</html>
