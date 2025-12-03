@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Horario</title>
+</head>
+<body>
+    <nav>
+        <h2>Para moverse por mi sitio web</h2>
+        <ul>
+            <li><a href="../index.html">Página principal</a></li>
+            <li><a href="../web1/cursos/cursoBS.html">Curso BootStrap</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+        </ul>
+    </nav>
+
+    <h1>Prueba HTML: la Tabla</h1>
+
+    <p>Debe recrear <strong>después de la Figura 1</strong> una tabla HTML dónde lo importante es el significado o semántica de los datos, no la presentación.</p>
+    <figure>
+        <img src="../ficheros/horario.png" alt="tabla horarios">
+        <figcaption>Figura 1: figura con la tabla que debe codificar debajo</figcaption>
+    </figure>
+
+    <table border="2">
+        <tr>
+            <td></td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+            <td>09:00</td>
+            <td rowspan="2">Cálculo</td>
+            <td>Algebra</td>
+            <td>Física</td>
+            <td>Dibujo</td>
+            <td>Química</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td>Física</td>
+            <td>Dibujo</td>
+            <td>Química</td>
+            <td>Física</td>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td colspan="5">Descanso</td>
+        </tr>
+        <tr>
+            <td>12:00</td>
+            <td>Álgebra</td>
+            <td colspan="3" rowspan="2">Idiomas</td>
+            <td>Dibujo</td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td>Física</td>
+            <td>Álgebra</td>
+        </tr>
+        <caption>Horario Primer Semestre</caption>
+
+    </table>
+      <p><code>&lt;!-- Aquí debe aparecer su tabla HTML, debajo de la figura con el horario --></code></p>
+</body>
+</html>

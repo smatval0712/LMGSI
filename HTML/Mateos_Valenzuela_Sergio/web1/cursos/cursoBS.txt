@@ -1,0 +1,73 @@
+
+Para moverse por mi sitio web
+
+    Página principal
+    Curso BootStrap
+    Horarios
+
+logo empresa Empresa ACME: curso BS
+
+Esta empresa se dedica a formaciones de e-learning, donde predomina el texto. Han apostado por el game-based learning para formar a sus empleados en habilidades que utilizan a diario. Y también para trasladarles conocimientos densos, relacionados con normativa o compliance, que gracias al serious game ADA, se han transformado en una experiencia disruptiva y gratificante, generando incluso, expectativas positivas por parte de los equipos antes de recibir dicha formación empresarial.
+
+En el siguiente tutorial haremos un recorrido breve de lo básico en BootStrap.
+Publicidad para subvencionar el curso
+
+Recibimos ayudas de estas dos empresas. Al hacer clic en los enlaces recibimos una pequeña donación. ¡Gracias!
+
+    www.mantecados.example
+    ofertas.polvorones.local
+
+Índice Curso Bootstrap
+
+    Primeros pasos
+    Diseño en rejilla
+    Componentes CSS
+        Formularios
+            Botónes
+        Tablas
+
+Primeros pasos
+
+Antes de utilizar Bootstrap, asegúrate de que tus páginas están preparadas para los estándares más recientes de HTML. Entre otras cosas, eso significa que deben utilizar el doctype de HTML5 e incluir una etiqueta meta para definir el viewport. En definitiva, la estructura básica de tus páginas debería ser:
+
+
+      <!DOCTYPE html>
+      <html lang="es">
+      
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      ...
+    
+
+Diseño en rejilla
+
+En la norma W3C CSS dice
+
+    CSS grid layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This guide introduces the CSS grid layout and the terminology that is part of the CSS grid layout specification. The features shown in this overview will then be explained in greater detail in the other guides in this series.
+
+Componentes CSS
+
+En este capítulo se explican los estilos que define Bootstrap 3 para las tablas y las imágenes, incluyendo todas sus variantes. También se explican las classes CSS genéricas y utilidades que simplifican el diseño de los sitios web y que se pueden aplicar a cualquier elemento.
+Formularios
+
+Los formularios son uno de los elementos más importantes de los sitios y aplicaciones web. Por eso Bootstrap 3 permite diseñar formularios con aspectos muy variados y define decenas de estilos para todos los campos de formulario.
+Botones en formulario
+
+En ocasiones puede ser útil mostrar un botón con el aspecto de haber sido presionado, es decir, con un color de borde y un color de fondo un poco más oscuro y una sombra que imite la presión del botón. Los elementos button consiguen este efecto mediante la pseudo-clase :active y los elementos a mediante la clase .active.
+Tablas
+
+Añade la clase .table a cualquier elemento table para aplicar los estilos básicos de Bootstrap 3 para tablas. El resultado es una tabla con un padding muy sutil y con líneas de separación solamente en las filas.
+
+Observe un ejemplo de su uso en esta figura
+tabla resumen BS
+Ejemplo de tabla con CSS aplicado
+Contacto con la empresa
+
+Email
+    acme@example.com
+Web
+    www.example.com
+Postal
+    Avenida de la Paz s/n, Forvik.
+

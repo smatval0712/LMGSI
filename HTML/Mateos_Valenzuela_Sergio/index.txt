@@ -1,0 +1,32 @@
+
+Para moverse por mi sitio web
+
+    Página principal
+    Curso BootStrap
+    Horarios
+
+Prueba HTML: El formulario
+
+Datos Usuario
+
+Email
+
+Clave
+
+URL de la página web de su empresa
+
+
+Compras
+
+Nº de cursos a realizar * un máximo de 4
+
+Indique el formato preferido del material
+
+Formato PDF
+Formato ebook .epub
+Formato web: html opción por defecto
+
+Indique su dirección postal completa (no mas de 120 caracteres)
+
+Acepto las condiciones legales *campo obligatorio
+

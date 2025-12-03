@@ -1,0 +1,20 @@
+
+Para moverse por mi sitio web
+
+    Página principal
+    Curso BootStrap
+    Horarios
+
+Prueba HTML: la Tabla
+
+Debe recrear después de la Figura 1 una tabla HTML dónde lo importante es el significado o semántica de los datos, no la presentación.
+horrio clases primer semestre
+
+
+
+Figura 1: figura con la tabla que debe codificar debajo
+
+
+      <!-- Aquí debe aparecer su tabla HTML, debajo de la figura con el horario -->
+
+

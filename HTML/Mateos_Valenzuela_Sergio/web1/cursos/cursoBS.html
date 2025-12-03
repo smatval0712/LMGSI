@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa ACME:curso BS</title>
+</head>
+<body>
+    <nav>
+        <h2>Para moverse por mi sitio web</h2>
+        <ul>
+            <li><a href="../../index.html">Página principal</a></li>
+            <li><a href="cursoBS.html">Curso BootStrap</a></li>
+            <li><a href="../horarios.html">Horarios</a></li>
+        </ul>
+        
+    </nav>
+    <header>
+        <h1><img src="../../ficheros/acme_logo.png" alt="logo empresa" width="64" height="37"> Empresa ACME: curso BS</h1>
+        
+        <p>Esta empresa se dedica a formaciones de e-learning, donde predomina el texto. Han apostado por el game-based learning para formar a sus empleados en habilidades que utilizan a diario. Y también para trasladarles conocimientos densos, relacionados con normativa o compliance, que gracias al serious game ADA, se han transformado en una experiencia disruptiva y gratificante, generando incluso, expectativas positivas por parte de los equipos antes de recibir dicha formación empresarial.</p>
+    </header>
+
+    <p>En el siguiente tutorial haremos un recorrido breve de lo básico en BootStrap.</p>
+    <aside>
+        <h2>Publicidad para subvencionar el curso</h2>
+        <p>Recibimos ayudas de estas dos empresas. Al hacer clic en los enlaces recibimos una pequeña donación. ¡Gracias!</p>
+        
+            <ul>
+                <li><a href="http://www.mantecados.example">www.mantecados.example</a></li>
+                <li><a href="http://www.ofertas.polvorones.local">ofertas.polvorones.local</a></li>
+            </ul>
+    </aside>
+
+    <section>
+        <nav>
+            <h2>Índice Curso Bootstrap</h2>
+        
+                <ul>
+                    <li><a href="#PrimerosPasos">Primeros pasos</a></li>
+                    <li><a href="#diseño">Diseño en rejilla</a></li>
+                    <li>
+                        <a href="#componentesCSS">Componentes CSS</a>
+                        <ul>
+                            <li>
+                                <a href="#formularios">Formularios</a>
+                                <ul>
+                                    <li><a href="#botones">Botónes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#tablas">Tablas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+        <article>
+            <h2 id="PrimerosPasos">Primeros pasos</h2>
+            <p>Antes de utilizar Bootstrap, asegúrate de que tus páginas están preparadas para los estándares más recientes de HTML. Entre otras cosas, eso significa que deben utilizar el doctype de HTML5 e incluir una etiqueta <code>meta</code> para definir el viewport. En definitiva, la estructura básica de tus páginas debería ser:</p>
+            <code>
+                <pre>
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="es">
+            
+                    &lt;head>
+                        &lt;meta charset="UTF-8">
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    ...
+                </pre>
+            
+            </code>
+        </article>
+        <article>
+            <h2 id="diseño">Diseño en rejilla</h2>
+            <cite>En la norma W3C CSS dice</cite>
+            <blockquote>CSS grid layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This guide introduces the CSS grid layout and the terminology that is part of the CSS grid layout specification. The features shown in this overview will then be explained in greater detail in the other guides in this series.</blockquote>
+        </article>
+    </section>
+
+    <section>
+        <h2 id="componentesCSS">Componentes CSS</h2>
+        
+        <p>En este capítulo se explican los estilos que define Bootstrap 3 para las tablas y las imágenes, incluyendo todas sus variantes. También se explican las classes CSS genéricas y utilidades que simplifican el diseño de los sitios web y que se pueden aplicar a cualquier elemento.</p>
+
+        <article>
+            <h3 id="formularios">Formularios</h3>
+            <p>Los formularios son uno de los elementos más importantes de los sitios y aplicaciones web. Por eso Bootstrap 3 permite diseñar formularios con aspectos muy variados y define decenas de estilos para todos los campos de formulario.</p>
+
+            <h4 id="botones">Botones en formulario.</h4>
+
+            <p>En ocasiones puede ser útil mostrar un botón con el aspecto de haber sido presionado, es decir, con un color de borde y un color de fondo un poco más oscuro y una sombra que imite la presión del botón. Los elementos button consiguen este efecto mediante la pseudo-clase :active y los elementos a mediante la clase .active.</p>
+        
+        </article>
+        <article>
+            <h3 id="tablas">Tablas</h3>
+            <p>Añade la clase .table a cualquier elemento table para aplicar los estilos básicos de Bootstrap 3 para tablas. El resultado es una tabla con un padding muy sutil y con líneas de separación solamente en las filas.</p>
+            
+            <p>Observe un ejemplo de <strong>su uso en esta figura</strong></p>
+            <figure>
+                <img src="../../ficheros/bootstrap-simple-table.png" alt="tablasCSS" width="950" height="250">
+                <figcaption>Ejemplo de tabla con CSS aplicado</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <footer>
+        <h2>Contacto con la empresa</h2>
+        <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:acme@example.com">acme@example.com</a></dd>
+            <dt>Web</dt>
+            <dd><a href="www.example.com">www.example.com</a></dd>
+            <dt>Postal</dt>
+            <dd>Avenida de la Paz s/n, Forvik.</dd>
+        </dl>
+    </footer>
+</body>
+</html>
