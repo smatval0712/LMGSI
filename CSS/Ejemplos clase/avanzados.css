@@ -2,9 +2,23 @@
 
 
 /*atributos*/
-[title]{
+abbr[title]{
     background-color: red;
 }
+/*que una etiqueta tenga un atributo title QUE SE LLAME PENDIENTE*/
+[title="pendiente"] {
+    background-color: black;
+}
+
+/* que una etiqueta tenga un atributo title QUE CONTENGA LA PALABRA PENDIENTE*/
+[title*="pendiente"] {
+    background-color: black;
+}
+/*cuando el atributo href de una etiqueta a TERMINE EN PDF*/
+[href$=".pdf"]{
+    background-color: chartreuse;
+}
+
 dfn[title]{
     background-color: pink;
 }
