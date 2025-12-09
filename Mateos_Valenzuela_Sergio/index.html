@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de inicio</title>
+</head>
+<body>
+    <nav>
+        <h2>Para moverse por mi sitio web</h2>
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="web1/cursos/cursoBS.html">Curso BootStrap</a></li>
+            <li><a href="web1/horarios.html">Horarios</a></li>
+        </ul>
+        
+    </nav>
+
+    <h1>Prueba HTML: El formulario</h1>
+
+    <form action="/apps/compra.php" method="post">
+        <fieldset>
+            <legend>Datos Usuario</legend>
+            
+            <p>
+                <label> Email <br>
+                    <input type="email" name="email"></input>
+                </label>
+            </p>
+            
+            <p>
+                <label> Clave <br>
+                    <input type="password" name="clave"></input>
+                </label>
+            </p>
+            
+            <p>
+                <label>URL de la página web de su empresa <br>
+                    <input type="url" placeholder="https://suempresa.com" size="40" name="url"></input>
+                </label>
+            </p>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Compras</legend>
+            
+            <p>
+                <label>Nº de cursos a realizar 
+                    <input type="number" max="4" size="0"></input>
+                    <em>* un máximo de 4</em>
+                </label>
+            </p>
+            
+            <p>
+                <label>Indique el formato preferido del material <br>
+                    <input type="radio" name="formato" value="pdf">Formato PDF</input> <br>
+                </label>
+                <label>
+                    <input type="radio" name="formato" value="epub">Formato ebook .epub</input> <br>
+                </label>
+                <label>
+                    <input type="radio" name="formato" value="web">Formato web: html opción por defecto</input> <br>
+                </label>
+            </p>
+            
+            <p>
+                <label>Indique su dirección postal completa (no mas de 120 caracteres) <br>
+                    <textarea name="direccion" maxlength="120" cols="80" rows="12"></textarea>
+                </label>
+
+            </p>
+            
+            <p>
+                <label>
+                    <input type="checkbox" name="acepta" value="si" required>Acepto las condiciones legales <em>*campo obligatorio</em></input>
+                </label>
+            </p>
+        </fieldset>
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        </p>
+    </form>
+
+</body>
+</html>
