@@ -1,0 +1,93 @@
+
+/* "Convertir botón en enlace */
+.enlace {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: blue;
+    border-bottom: 1px solid blue;
+    margin: auto 10px;
+}
+
+/* separando el texto de los bordes con padding */
+.padding input {
+    padding: 0.3em 0.6em;
+}
+
+/* destacando el elemento con el foco  :focus */
+.padding input:focus {
+    background-color: cyan;
+    border: red 1px dotted;
+    box-shadow: 12px 8px green;
+}
+
+/* alineamos labels con inputs
+ versión a)  */
+.alinea input {
+    display: block;
+    margin: 0 0 .5em  0;   
+}
+
+/*  versión b) sinilar, es la solución de uniwebsidad
+.alinea label, .alinea input[type="submit"] {
+    display: block;
+    margin: 1em 0 0  0;   
+} */
+
+/* ¿y si input anidado en label: LA MISMA SOLUCIÓN que a)  */
+.alinea02 input{
+    display: block;
+    margin: .0 0 1em 0;   
+}
+
+/* inputs de formulario en columnas de mismo ancho con GRID 
+   (uso grid similar al ejemplo listas y nav */ 
+   div.columnas > div {
+    display: grid;
+    grid-template-columns:  1fr 4fr; /* 20% 80% ; */
+    margin-bottom: .5em;
+}
+
+/* ¡¡¡¡ OBSOLETO !!!!  inputs de formulario en columnas con float
+   requiere cada par label/input delimitado por etiqueta de bloque */
+/*
+.columnas label  {
+    float: left;
+    width: 8em;    
+}
+.columnas div {
+    margin: 1em 0;
+} */
+
+
+/* fieldset en paralelo usando GRID  */
+div.fieldset form {
+    display: grid;
+    grid-template-columns:   1fr 1fr /* repeat(2, 1fr); */
+}
+
+/* para alinear labels e inputs dentro del fieldset */
+.fieldset label, .fieldset input[type="submit"] {
+    display: block;
+    margin: .5em 0 0 0;   
+}
+
+/* ¡¡¡¡ obsoleto !!!!  fieldset en paralelo con float   */
+/* .fieldset fieldset {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin:0; 
+} */
+
+/* REGLAS CSS "decorativas" */
+h2 {
+    border-bottom: 3px dashed black;
+    margin-top: 3em;
+}
+legend {
+    color: red;
+    background-color: yellow;
+}
+
+

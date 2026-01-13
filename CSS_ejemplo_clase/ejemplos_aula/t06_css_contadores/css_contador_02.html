@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contadores</title>
+	<link rel="stylesheet" href="css_contador_02.css">
+</head>
+
+<body>
+	<h1>Otros ejemplos de Contadores CSS</h1>
+	<p><em>Nota: se usan varias cabeceras h1 para separar ejemplos de uso..</em></p>
+	<p>El uso de contadores se basa en el pseudo elemento <code>::before (o ::after)</code>, la propiedad
+		<code>content</code> para insertar el contador y el uso de nuevas propiedades:</p>
+
+	<ul>
+		<li><code>counter-reset</code> - Creates or resets a counter</li>
+		<li><code>counter-increment</code> - Increments a counter value</li>
+		<li><code>counter() </code> - Adds the value of a counter to an element</li>
+	</ul>
+
+	<p>Si va a numerar los apartados de nivel 2, debe iniciar el contador en una regla CSS asociada al elemento padre, e
+		incrementarlo y mostrarlo en una propiedad del elemento a numerar usando la pseudoclase <code>::before</code>
+	</p>
+	<p>Puede numerar los apartados de nivel 2 de una sección, crear contadores anidados, numerar listas, numerar
+		párrafos, listas de definiciones, etc. Tiene varios ejemplos en el curso, y puede obtener más información en:</p>
+
+	<ul>
+		<li><a href="http://www.w3schools.com/css/css_counters.asp">Contadores</a> en W3Schools</li>
+		<li><a href="http://www.smashingmagazine.com/2013/04/css-generated-content-counters/">Ejemplos detallados</a>
+		</li>
+	</ul>
+
+
+
+	<section class="unnivel">
+		<h1> Ejemplo de numeración de un nivel</h1>
+		<p>Si quiere numerar las cabeceras de nivel 2 de esta sección con <code>class="unnivel"</code>debe aplicar estas tres reglas CSS:</p>
+		<pre><code> 
+	section.unnivel { 
+		counter-reset: nh2;
+	}
+	section.unnivel h2 {
+		counter-increment: nh2;
+	}
+	section.unnivel h2::before {
+		content: "Apartado " counter(nh2) ": ";
+	}
+	</code></pre>
+
+		<h2>HTML</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quis, saepe amet commodi minima
+			possimus aliquid eum vel totam aut magni quo voluptate eaque vitae.</p>
+		<h2>CSS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, libero voluptates earum dicta tenetur ab
+			cum itaque quasi asperiores repudiandae nisi ullam eius nihil recusandae id odit reprehenderit. Rerum error
+			adipisci eos velit iste magni quaerat tenetur voluptatem. Fugit, quaerat, numquam maxime illum modi
+			assumenda non voluptas deleniti quae nisi impedit debitis provident explicabo saepe repellendus! Fugit,
+			doloribus, magnam, nulla recusandae perspiciatis ipsa odit eligendi nam adipisci veniam voluptates sequi aut
+			expedita. Labore, placeat, excepturi consectetur accusantium saepe natus voluptatibus ea vero repellendus
+			illum incidunt non corporis tempore veritatis quis sint deserunt ipsam id atque numquam sunt assumenda
+			repellat cumque!</p>
+		<h2>XML</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, dolore rerum velit sed numquam
+			assumenda facere ducimus veritatis minus nemo itaque quisquam voluptate modi sunt adipisci fugiat quis cum
+			architecto maiores est alias suscipit quo quia temporibus vel quos odit distinctio optio voluptatum quae.
+			Sit, delectus, veniam laudantium consequuntur tenetur aliquam praesentium iure voluptate vitae quod omnis
+			fugit perferendis ipsa quo molestiae soluta explicabo est quam placeat perspiciatis amet earum ipsam quos
+			voluptatem repellendus accusantium accusamus minima ea numquam excepturi. Necessitatibus, quos, hic, harum
+			odit accusantium voluptatum laboriosam tempora vitae adipisci suscipit ratione aliquam quisquam perferendis
+			fuga similique assumenda itaque! In, voluptatum, a accusantium sapiente soluta expedita labore
+			exercitationem ipsa. Temporibus, quod aliquid iusto dolores vero similique beatae velit totam fugit magni
+			eveniet delectus debitis!</p>
+	</section>
+
+	<section class="dosniveles">
+		<h1> Ejemplo de numeración de dos niveles</h1>
+		<p>En este caso necesita dos contadores, uno para las cabeceras h2 y otro para las h3. Las cabecera de nivel 2 muestran el contador nh3, y las cabeceras h3 el contador nh2 y el nh3:</p>
+<pre><code> 
+	/* tres reglas del contador h2 */
+	.dosniveles {
+	  counter-reset: nh2;  /* contador de h2 */
+	}
+	.dosniveles h2 {
+	  counter-increment: nh2;
+	}
+	.dosniveles h2::before {
+	  content: counter(nh2) ". ";
+	  background-color: lightgreen;
+	}
+	
+	/* las tres reglas del contador h3 */
+	.dosniveles h2 {
+	  counter-reset: nh3;    /* contador de h3 */
+	}
+	.dosniveles h3 {
+	  counter-increment: nh3;
+	}
+	/* muestra los dos contadores */
+	.dosniveles h3::before {
+	  content: counter(nh2) "." counter(nh3);  
+	  background-color: lightgreen;
+	}	
+</code></pre>
+
+		<h2>HTML</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quis, saepe amet commodi minima
+			possimus aliquid eum vel totam aut magni quo voluptate eaque vitae.</p>
+		<h3> HTML 5</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, culpa!</p>
+		<h3> HTML6</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, magnam earum esse porro quasi culpa quam unde
+			expedita recusandae distinctio consectetur reiciendis vitae dignissimos velit.</p>
+		<h2>CSS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, libero voluptates earum dicta tenetur ab
+			cum itaque quasi asperiores repudiandae nisi ullam eius nihil recusandae id odit reprehenderit.</p>
+		<h3> CSS3</h3>
+		<h3> CSS3 y XML</h3>
+		<h2>XML</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, dolore rerum velit sed numquam
+			assumenda facere ducimus veritatis minus nemo itaque quisquam voluptate!</p>
+	</section>
+
+	<section>
+		<h1> Ejemplo de numeración de una lista de definiciones. </h1>
+		<p>Observe que además se le aplican estilos al contenidos generado con ::before </p>
+
+		<pre><code> 
+	dl {
+	  counter-reset: ndt;
+	}
+		
+	dl dt {
+	  counter-increment: ndt;
+	}
+	dl dt::before {
+	  content: counter(ndt) ". ";
+	  background-color: yellow;
+	  border: 2px solid red;
+	}
+</code></pre>
+		<dl>
+			<dt>Definición 1</dt>
+			<dd>enunciado de la definición del elemento 1</dd>
+			<dt>Definición 2</dt>
+			<dd>enunciado de la definición del elemento 2</dd>
+			<dt>Definición 3</dt>
+			<dd>enunciado de la definición del elemento 3</dd>
+			<dt>Definición 4</dt>
+			<dd>enunciado de la definición del elemento 4</dd>
+		</dl>
+	</section>
+
+	<section class="listas">
+		<h1>Mumeración de listas ordenadas anidadas</h1>
+		<p>Los contadores son auto-anidados: si se resetea (define) un contador en un elemento descendiente se crea una nueva instancia de ese contador (un contador distinto pero con el mismo identificador).</p>
+		<p> Esto es útil por ejemplo con las listas anidadas donde es posible que no conozcamos los niveles de
+			anidación, o estos cambien, o sean tantos que hagan el código CSS farragoso. </p>
+		<p> En este contexto es útil la función <code><strong>counters()</strong></code>: crea un string con todos los contadores que existen en ese
+			ámbito o scope con un identificador dado separados por el string que se indica en la función: </p>
+		<pre><code> 
+	.listas ol {
+	  counter-reset: nli;
+	  list-style-type: none;
+	}
+	.listas li::before {
+	  counter-increment: nli;
+	  content: counters(nli,".") ". ";
+	  background-color: lightgreen;
+	} 
+</code></pre>
+
+		<p>Observe que se muestra un contador con la función counters</p>
+		<ol>
+			<li>item - Observe que se muestra un contador</li>
+			<li>item 
+				<ol>
+					<li>item</li>
+					<li>item - Observe que se muestran dos contadores</li>
+					<li>item 
+						<ol>
+							<li>item- Observe que se muestran tres contadores</li>
+							<li>item</li>
+							<li>item</li>
+						</ol>
+					</li>
+					<li>item</li>
+				</ol>
+			</li>
+			<li>item</li>
+			<li>item</li>
+		</ol>
+	</section>
+
+</body>
+
+</html>

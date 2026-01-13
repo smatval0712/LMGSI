@@ -1,0 +1,72 @@
+h1 {
+  border-bottom: 1px solid black;
+}
+
+/* numeración de un nivel */
+
+section.unnivel {
+  counter-reset: napartadoh2;
+}
+section.unnivel h2{
+  counter-increment: napartadoh2;
+}
+section.unnivel h2::before {
+  content: "Apartado " counter(napartadoh2) ": ";
+}
+
+/* numeración de dos niveles: numeramos h2 y h3 */
+
+/* tres reglas del contador h2 */
+.dosniveles {
+  counter-reset: nh2;  /* contador de h2 */
+}
+.dosniveles h2 {
+  counter-increment: nh2;
+}
+.dosniveles h2::before {
+  content: counter(nh2) ". ";
+  background-color: lightgreen;
+}
+
+/* las tres reglas del contador h3 */
+.dosniveles h2 {
+  counter-reset: nh3;    /* contador de h3 */
+}
+.dosniveles h3 {
+  counter-increment: nh3;
+}
+.dosniveles h3::before {
+  content: counter(nh2) "." counter(nh3);  /* muestra los dos contadores */
+  background-color: lightgreen;
+}
+
+
+/* lista de definiciones */
+
+dl {
+  counter-reset: ndt;
+}
+
+dl dt {
+  counter-increment: ndt;
+}
+dl dt::before {
+  content: counter(ndt) ". ";
+  background-color: yellow;
+  border: 2px solid red;
+}
+
+/* listas anidadas */
+
+/* Sólo se define un contador de li */
+.listas ol {
+  counter-reset: nli;
+  list-style-type: none;
+}
+/* se usa la función counters, con s final, 
+   con un segundo parámetro que es el separador */
+.listas li::before {
+  counter-increment: nli;
+  content: counters(nli,".") ". ";
+  background-color: lightgreen;
+} 

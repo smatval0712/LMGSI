@@ -1,0 +1,17 @@
+/* similar a uniwebsidad */
+#ppal {
+  width: 50%;
+  border: 4px solid lightseagreen;
+  padding: 1em;
+}
+
+/* posiciona centrado horizontal y  VERTICAL */
+#ppal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* usamos translate:  en uniwebsidad  usan márgenes negativos 
+      que dependen del tamaño del contenedor */
+}
+

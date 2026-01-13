@@ -1,0 +1,45 @@
+/* pos.css */
+
+/* ejemplos con la lista id="prueba1" */
+
+/* un elemento empezando desde el principio */
+ul#prueba1 li:nth-child(3){
+    color: blue;
+}
+
+/* un elemento empezando desde el final */
+/* nota: no hace falta espcificar li si la lista sólo tiene li... */
+ul#prueba1 :nth-last-child(2){
+    color: green;
+}
+
+/* ejemplos con la lista id="prueba2" */
+
+/* con ciclos an+b */
+/*Esto significa: haz grupos de 3 y al 2 ponlo color tomate*/
+ol#prueba2 :nth-child(3n+2){
+    color: tomato;
+}
+
+/* atajos */
+/*lo mismo que con nth*/
+ol#prueba2 :first-child {
+    font-style: italic;
+}
+ol#prueba2 :last-child {
+    font-style: italic;
+}
+
+
+/* ejemplos con la lista id="prueba3" */
+
+/* a partir de b
+   del elemento 5 en adelante */
+ol#prueba3 :nth-child(n+5){
+    color: brown;
+} 
+/* hasta b 
+  del elemento 1 hasta el 3 */
+ol#prueba3 :nth-child(-n+3){
+    text-decoration: underline;
+} 

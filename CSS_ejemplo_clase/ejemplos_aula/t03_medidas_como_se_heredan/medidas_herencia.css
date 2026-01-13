@@ -1,0 +1,13 @@
+/* medidas_herencia */
+
+/* analizamos cómo se hereda la propiedad text-indent:3em al h2 de la sección */
+section {
+    font-size: 12px;
+    text-indent: 3em;
+}
+
+/* h2 hereda el VALOR YA CALCULADO de text-indent: 12px*3em => 36 px 
+   si heredara valor sin calcular (3em) text-indent sería 24px*3 => 72 px */
+section h2 {
+    font-size: 24px;
+}

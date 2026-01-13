@@ -1,0 +1,50 @@
+/* En general debe tener en cuenta:  
+ - a) lugar dónde se resetea el contador
+ - b) lugar dónde se incrementa
+ - c) lugar dónde se muestra  */
+
+
+/* 1º: modificar en este selector section por article o body
+    para ver la diferencia al numerar los párrafos */
+
+/* a) se define/reinicia  */  
+section { 
+    counter-reset: np;
+}
+
+/* b) se incrementa  */
+section p{
+    counter-increment: np;
+}
+
+/* c) se muestra */
+section p::before {
+    content: " (" counter(np) ") "; 
+    background-color: yellow;
+}
+
+/* 2º: comentar regla CSS previa y descomentar esta */
+/* section p:nth-of-type(odd)::before {
+    content: "(" counter(np) ") ";
+    background-color: yellow;
+
+}  */
+
+
+/* 3ª el contador puede mostrarse en elementos
+    distintos  del que se cuenta */
+section::after {
+    content: "Total párrafos: " counter(np);
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+/* 4ª: en algunos casos se pueden agrupar 
+   las reglas CSS b) y c) en una única regla  */
+/* b) y c) se incrementa y se muestra */
+/* section p::before {
+    counter-increment: np;
+    content: " (" counter(np) ") "; 
+    background-color: yellow;
+} */
+

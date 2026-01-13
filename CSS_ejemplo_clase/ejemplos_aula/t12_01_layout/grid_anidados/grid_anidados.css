@@ -1,0 +1,57 @@
+/* grid_anidados.css */
+
+#contenedor {
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr;  /* o en %: 20% 50% 30%;*/
+}
+
+
+
+footer {
+  grid-column: 1/span 3;
+
+
+  /* ¡¡¡ GRID ANIDADO !!! */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+}
+
+nav {
+  grid-column: 1 / span 3;
+  grid-row: 1 ;
+} 
+
+
+nav ul {
+      /* ¡¡¡ GRID ANIDADO !!! */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    /* estilos botonera */
+    padding-left: 0;
+    list-style-type: none;
+    background-color: pink;
+    border: 1px red solid;
+}
+
+/* estilos botonera */
+nav ul li  {
+  text-align: center;
+  border: 1px red solid;
+  padding: 0.5em;;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+

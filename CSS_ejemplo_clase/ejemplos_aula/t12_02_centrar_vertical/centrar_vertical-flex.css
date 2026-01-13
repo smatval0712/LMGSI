@@ -1,0 +1,15 @@
+#ppal {
+  width: 50%;
+  border: 4px solid lightgreen;
+  padding: 1em;
+}
+
+/* Parte aplicación flex */
+#contenedor {
+  display: flex;
+  height: 100vh; /* no visto... */
+  align-items: center;
+  justify-content: center;
+}
+
+

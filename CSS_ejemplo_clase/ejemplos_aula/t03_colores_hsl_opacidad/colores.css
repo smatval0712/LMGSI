@@ -1,0 +1,27 @@
+/* colores en formato hsl */
+section {
+    background-color: hsl(180, 46%, 66%);
+    color: hsl(0, 89%, 37%);
+}
+
+/* opacidad */
+h1 {
+    color: blue;
+}
+header p {
+    color: blue;
+    opacity: 0.3; /* valor entre 0 y 1 */
+}
+
+img.difumina {
+    opacity: 0.2;
+}
+
+/* opacidad en el color */
+li:nth-child(2n) {
+    color: rgba(0, 0, 255, 0.5);
+}
+
+li:nth-child(2n+1){
+    color: hsla(0, 100%, 50%, 0.5);
+} 

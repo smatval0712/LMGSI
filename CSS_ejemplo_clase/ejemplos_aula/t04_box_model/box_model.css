@@ -1,0 +1,48 @@
+/* ejemplo border */
+
+/* ejemplos uso border */
+article h2 {
+    border: double 4px red;
+    border-bottom-color: blue;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-left: 16px inset green;;
+} 
+
+/* ejemplo
+ -  margin y padding: 1,2,3 o 4 valores 
+ -  border-color o border width también 1-4 valores*/
+article p {
+    margin: 64px 16px 64px 32px;
+    padding: 2em;
+    border: 2px dotted red;
+    border-width: 1px 2px 3px 4px; 
+    border-color: red blue green yellow
+}
+
+/* propiedades background: 
+    - ver diferencia pensasdo.png/pensando.jpg: transparencia 
+    - shorthand background */
+section {
+    /* background-color: cyan;
+    background-image: url("pensando.png");
+    background-repeat: repeat-x;
+    background-position: left 25%; */
+    background: cyan url("pensando.png") repeat-x left top;
+    padding-top: 214px; /* para evitar solape imagen con contenidos */
+}
+
+section p {
+    border: 4px solid red;
+    /* padding-top:10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px; */
+    padding:  20px 30px  40px ;
+    /* margin:64px; */
+    margin: 10px 20px 30px 40px;
+    /* background-color: yellow; */
+    /* height: 50px; */
+    width:80%;
+    background: yellow url("twitter.jpg");
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos colisiones y herencia</title>
+    <link rel="stylesheet" href="herencia.css">
+</head>
+
+<body>
+    <h1>Ejemplo herencia </h1>
+
+    <p>Observe el fichero CSS asociado:</p>
+    <ul>
+        <li>En la sección se aplican dos propiedades: una se hereda y otra no.
+            <ul>
+                <li> <code> color: blue; </code> se hereda en <code> h2 </code> y <code> p </code></li>
+                <li> <code> border: 2px solid red;    </code> <strong>no</strong> se hereda ni en <code> h2 </code> ni
+                    en <code>p</code></li>
+            </ul>
+        </li>
+
+        <li>Puede analizar la herencia en el inspector de elementos, como puede ver en estas dos capturas
+            <ul>
+                <li><a href="section.png">La sección</a></li>
+                <li><a href="herencia.png">Elemento de la sección</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <section>
+        <h2>section: ejemplo de herencia</h2>
+        <p>La sección tiene un borde rojo, pero no se hereda. En cambio el color azul si se hereda en la cabecera y en
+            los párrafos</p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+            accusantium distinctio sint magnam dicta voluptas debitis possimus,
+            autem omnis accusamus veritatis ullam eaque quae quis quo nisi
+            laboriosam sunt dolore!
+        </p>
+    </section>
+
+
+ </body>
+
+</html>

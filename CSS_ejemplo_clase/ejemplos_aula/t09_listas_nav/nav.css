@@ -1,0 +1,31 @@
+/* Ahora distintas formas de disponerlas */
+
+/* en vertical */
+nav.vertical  {
+    width: 25%;
+}
+
+/* en horizontal con grid */
+nav.grid ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*  en horizontal con float */
+nav.float ul li {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+nav.float ul {
+    overflow: auto;
+}
+
+/*  en horizontal con flex */
+nav.flex ul {
+    display: flex;
+}
+nav.flex ul li {
+    flex: 1;
+}
+

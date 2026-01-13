@@ -1,0 +1,9 @@
+h1 strong {
+    background-color: yellow;
+    text-decoration: underline;
+    border: 3px dotted blue;
+}
+
+p {
+    color: blue;
+}

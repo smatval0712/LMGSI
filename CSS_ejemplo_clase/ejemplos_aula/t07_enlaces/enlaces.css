@@ -1,0 +1,89 @@
+/* enlaces.css */
+
+/* modificar aspecto con propiedades de texto */
+section p a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: yellow;
+}
+
+/* personalizar enlaces por tipo*/
+/* modo a): con clases, ya obsoleto, mejor usar selector de atributo
+a.pdf {   ...} */
+/* b): con selector de atributo */
+a[href$=".pdf"] {
+    /* poner imagen de fondo */
+    background-image: url("https://icons.iconarchive.com/icons/hopstarter/soft-scraps/16/Adobe-PDF-Document-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 18px;
+}
+
+/* pseudo-clases */
+
+article a:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* al hacer clic */
+article a:active {
+    border: 2px red solid;
+}
+
+/* ojo con visited */
+article a:visited {
+    color: grey;
+    font-style: italic;  /* no se aplica !!! 
+    https://developer.mozilla.org/es/docs/Web/CSS/:visited */
+}
+
+/* hover aplicado a otro elemento */
+h1:hover {
+    color: red;
+    text-align: center;
+}
+
+/* personalizar el subrayado 
+    a) con border 
+    b) con text-decoration */
+aside p:nth-of-type(1) a {
+    text-decoration: none;
+    border-bottom: 4px red dashed;
+}
+aside p:nth-of-type(2) a {
+    text-decoration: none;
+    border-bottom: 4px green solid;
+    border-right: 4px green solid;
+}
+aside p:nth-of-type(3) a {
+    border-bottom: 0;
+    text-decoration: 3px brown double underline;
+}
+aside p:nth-of-type(4) a {
+    border-bottom: 0;
+    text-decoration: 3px tomato dashed overline;
+}
+
+
+
+
+/* ejemplo modificar enlace para 
+   parecer un botón, tres reglas CSS */
+footer a {
+    text-decoration: none;
+    color: black;
+    border: 2px inset grey;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: silver;
+}
+
+footer a:hover {
+    background-color: grey;
+}
+
+footer a:active {
+    border: outset;
+}

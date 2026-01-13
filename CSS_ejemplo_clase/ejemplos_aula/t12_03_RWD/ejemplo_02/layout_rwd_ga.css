@@ -1,0 +1,117 @@
+/* ejemplo_layout_rwd-grid.css */
+
+
+/* propiedades "decorativas */
+#contenedor > * {
+  border: 1px blue dashed;
+  padding: 0.5em;;
+}
+
+
+/* Primer layout: Si no se espcifica nada, los bloques 
+  ocupan el 100%, luego aparecen apilados (stacked) 
+  en el orden del fichero HTML*/
+
+
+
+/* Segundo layout: si el ancho es 600 o más..*/
+@media screen and (min-width: 600px) {
+  #contenedor {
+    background-color: hsl(30, 100%, 50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      " footer footer "
+      " nav    section"
+      " aside  section"
+      " header header";
+      row-gap: 1em;
+      column-gap: 1em;;
+  }
+
+  /* asignación de elementos HTML a nombres de áreas 
+    sólo hace falta hacerlo una vez en diseño first mobile*/
+  footer {
+    grid-area: footer;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  section {
+    grid-area: section;
+  }
+
+
+}
+
+/* Tercer layout: si el ancho pasa de 900:
+   (nota: se aplican las de los layouts 1 y 2  */
+@media screen and (min-width: 900px) {
+  #contenedor {
+    background-color: hsl(60, 100%, 50%);
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:
+    " aside   header   nav "
+    " aside  section  section"
+    " aside  footer    footer";
+  }
+
+}
+
+
+/* si pasamos de 1200: todas las anteriores más.. */
+@media screen and (min-width: 1200px) {
+  #contenedor {
+    background-color: hsl(90, 100%, 50%);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "section section  aside"
+    "header  header   aside"
+    "nav  footer  footer";
+    /* centrar contenidos con mágeens */
+    width: 80%;
+    margin:auto;
+  }
+
+}
+  
+
+
+
+
+
+/* específica para barra navegación: 
+    entre 402 y 900 convierte botonera en horizontal */
+/* @media screen and (max-width: 900px) and (min-width:420px) {
+      nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    } */
+
+/* decoración de listas => botonera */
+/* nav ul {
+  list-style-type: none;
+  border: 1px solid black;
+  padding-left: 0;
+}
+nav ul li {
+border: 1px solid black;
+text-align: center;
+background-color: #d3f6eb;
+padding: 0.5em;
+}
+nav ul li a {
+text-decoration: none;
+font-weight: bold;
+}     */

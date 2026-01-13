@@ -1,0 +1,23 @@
+/* file: colisiones. css */
+
+/* para ver colisiones en el artículo tres selectores 
+*/
+.revisar {
+  color: silver;
+}
+article h2 + p {
+  color: red;
+}
+article p {
+  color: green;
+}
+
+/* colisiones en footer y "desempate" por posición: 
+   gana el último.    
+*/
+footer > p {
+  color: green;
+}
+footer p {
+  color: tomato;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos colisiones y herencia</title>
+    <link rel="stylesheet" href="colisiones.css">
+   </head>
+  <body>
+    <h1>Ejemplo colisiones</h1>
+
+    <p>Observe el fichero CSS asociado:</p>
+    <ul>
+      <li> En el artículo vemos un ejemplo de colisiones y cómo se resuelve en base
+        a la "especificidad". El primer párrafo se ve afectado por tres selectores (y se aplica el primero):
+          <ul>
+            <li><code>.revisar {color: silver;}</code>: <strong>especificidad (0,1,0) <!--el primer 0 son los id, el 1 son clases y el 3 las etiquetas--></strong></li>
+            <li><code>article h2 + p {color: red;}</code>: especificidad (0,0,3)</li>
+            <li><code>article p {color: green;}</code>: especificidad (0,0,2)</li>
+          </ul>
+      </li>
+
+    <!-- si hay empate entre especifidades, ganará la última que aparece en el código -->
+
+      <li> En el footer un ejemplo de desempate en caso de la misma especificidad. Los párrafos se ven afectaos por dos selectores. Al ser los dos igual de específicos se aplica el que aparece en último lugar en el código
+        <ol>
+          <li><code>footer > p </code>: especificidad (0,0,2)</li>
+          <li><code>footer p</code><strong>: especificidad (0,0,2)</strong></li>
+        </ol>
+      </li>
+      <li>Puede analizar las colisiones en el inspector de elementos. Añadimos enlaces a capturas de dichas situaciones:
+        <ol>
+          <li>En el artículo: <a href="colisiones.png">Colisiones</a></li>
+          <li>el el footer: <a href="desempate.png">Desempate</a></li>
+        </ol>
+      </li>
+    </ul>
+
+    <article>
+      <h2>Titular del artículo</h2>
+      <p class="revisar"> <strong>Párrafo a) de la clase revisar, b) adyacente a h2 y c)  dentro del artículo</strong>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+        exercitationem deserunt molestiae voluptatibus, doloribus perferendis
+        sunt, labore numquam, id temporibus ipsum quod perspiciatis excepturi
+        praesentium harum repellendus fuga. Atque, nulla.
+      </p>
+      <p> Párrafo dentro del artículo
+        Veritatis, voluptate impedit tempore a magnam facere dignissimos in sed
+        ratione delectus deserunt corporis, quod ad. Saepe dicta hic eveniet
+        totam perferendis ipsum neque aut quaerat non, amet, voluptate
+        accusantium.
+      </p>
+      <p> Párrafo dentro del artículo
+        Voluptatem saepe, dolores amet architecto corporis similique repellat
+        sequi consequatur! Illum suscipit repellendus ullam quod excepturi,
+        officiis repudiandae molestias dolor eveniet quae tempora aspernatur!
+        Nisi veritatis quasi natus voluptatem harum?
+      </p>
+    </article>
+
+    <footer>
+      <h2>Ejemplo de "desempate"</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos dolore
+        totam quo repellendus nesciunt perspiciatis? Eius cumque incidunt aut
+        deserunt odio corrupti, perferendis unde ducimus doloribus perspiciatis
+        quae, vel molestias!
+      </p>
+      <p>
+        Sequi autem praesentium unde incidunt vitae iusto a labore consectetur
+        magnam dolore atque, obcaecati, amet vero, ea voluptatem nihil error
+        reprehenderit accusamus! Sequi, saepe. Cumque fugit cupiditate expedita
+        possimus natus?
+      </p>
+      <p>
+        Voluptate a nesciunt numquam laudantium hic error at! Beatae est sint
+        commodi. Quaerat aliquid hic natus quisquam, atque neque aut autem
+        adipisci id. Id sequi consequuntur distinctio nam, culpa quod!
+      </p>
+    </footer>
+  </body>
+</html>

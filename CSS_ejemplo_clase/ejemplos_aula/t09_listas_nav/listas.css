@@ -1,0 +1,23 @@
+/* listas.css */
+
+ol {
+    list-style-type: lower-alpha; /* probar otros: upper-roman, decimal-leading-cero.. */
+}
+
+ul {
+    list-style-type: square; /* disc, circle, disclosure-open/close */
+}
+
+/* posición de la viñeta: en la zona de padding de la lista o en la zona de contenido 
+   se ve en inspector de elementos o con item de más de una línea*/
+ul {
+    list-style-position: outside; /* inside|outside */
+}
+
+/* list-style-image y shorthand */
+ul.img {
+    list-style-image: url("https://icons.iconarchive.com/icons/icojam/blue-bits/16/arrow-right-icon.png");
+    list-style-position: inside;
+    list-style-type: disc; 
+    /* list-style: inside disc url("https://icons.iconarchive.com/icons/icojam/blue-bits/16/arrow-right-icon.png") ; */
+}

@@ -1,0 +1,65 @@
+/* grid-rwd.css */
+
+/* Escenario con 2 puntos de ruptura, 3 layouts */
+
+
+/* layout A: hasta 580 px 
+    No tocamos layout, y añadimos color de fondo
+    para modicarlo luego y ver la colisión ,etc */
+header {
+  text-align: center;
+  background-color: yellow;
+}
+
+/* layout B: a partir de 580 
+   - añade grid
+   - observe que se usa lo especificado en layout previo
+    - texto cabecera centrado
+    - color de fondo cambia: colisión */
+@media (min-width: 580px) {
+    /* modifica propiedad de layout A:
+      igual de específicas, gana la última */
+    header {
+      background-color: yellowgreen;
+    }
+
+  #contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+  header {
+    grid-column: 1 / span 2;
+  }
+  aside, footer {
+    grid-column: 1 / span 2;
+  }
+
+}
+
+/* layout C: a partir de 992 px
+   - incluye layout anterior  
+    - añadimos/modificamos
+       - numero de columas
+       - disposición de algunos elementos  */
+@media (min-width: 992px) {
+  /* modifica propiedad de layout A y B:
+    igual de específicas, gana la última */
+  header {
+    background-color: goldenrod;
+  }  
+  /* no es neceario especificar display:grid, ya especificada en layout B*/
+  #contenedor {
+    grid-template-columns: 1fr 3fr 2fr;
+  }
+  header, footer {
+    grid-column: 1 / span 3;
+  }
+  aside {
+    grid-column: 3;
+  }
+
+}
+
+

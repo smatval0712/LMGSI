@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS y formularios</title>
+    <link rel="stylesheet" href="form_01.css">
+</head>
+<body>
+    <h1>CSS y formularios</h1>
+
+    <div>
+        <h2>Modificando el aspecto de un botón a enlace</h2>
+        <input                type="button" value="Botón normal" />
+        <input class="enlace" type="button" value="Botón como enlace" />
+    </div>
+
+    <div class="padding">
+        <h2>Modificando el padding (y usando :focus)</h2>
+        <label for="usuario1">Usuario</label> <br>
+        <input type="text" name="usuario1" id="usuario1">
+
+    </div>
+
+    <div class="alinea">
+        <h2>Alineando labels <em>(no anidadas) </em>con input</h2>
+        <label for="nombre1">Nombre</label>
+        <input type="text" name="nombre1" id="nombre1" />
+      
+        <label for="apellidos1">Apellidos</label>
+        <input type="text" name="apellidos1" id="apellidos1" size="50" />
+      
+        <label for="dni1">DNI</label>
+        <input type="text" name="dni1" id="dni1" size="10" maxlength="9" />
+      
+        <label for="contrasena1">Contraseña</label>
+        <input type="password" name="contrasena1" id="contrasena1" />
+      
+        <input class="btn" type="submit" value="Darme de alta" />
+    </div>
+
+    <div class="alinea02">
+        <h2>Alineando labels <em>anidadas</em> con input (misma solución)</h2>
+        <label for="nombre2">Nombre
+         <input type="text" name="nombre2" id="nombre2" />
+        </label>
+      
+        <label for="apellidos2">Apellidos
+            <input type="text" name="apellidos2" id="apellidos2" size="50" />
+        </label>
+      
+        <label for="dni2">DNI
+        <input type="text" name="dni2" id="dni2" size="10" maxlength="9" /></label>
+      
+        <label for="contrasena2">Contraseña
+        <input type="password" name="contrasena2" id="contrasena2" /> </label>
+      
+        <input class="btn" type="submit" value="Darme de alta" />
+    </div>
+
+    <div class="columnas">
+        <h2>Alineando los inputs en columnas mismo tamaño</h2>
+        <div>
+            <label for="nombre3">Nombre</label>
+            <input type="text" name="nombre3" id="nombre3" />
+        </div>
+      
+        <div>
+            <label for="apellidos3">Apellidos</label>
+            <input type="text" name="apellidos3" id="apellidos3" size="50" />
+        </div>
+      
+        <div>
+            <label for="dni3">DNI</label>
+            <input type="text" name="dni3" id="dni3" size="10" maxlength="9" />
+        </div>
+      
+        <div>
+            <label for="contrasena3">Contraseña</label>
+            <input type="password" name="contrasena3" id="contrasena3" />
+        </div>
+      
+        <input class="btn" type="submit" value="Darme de alta" />
+    </div>
+
+    <div class="fieldset">
+        <h2>Fieldsets en paralelo con grid</h2>
+        <form action="">
+            <fieldset>
+                <legend>Agrupación 01</legend>
+                <label for="nombre4">Nombre</label>
+                <input type="text" name="nombre4" id="nombre4" />
+                <label for="apellidos4">Apellidos</label>
+                <input type="text" name="apellidos4" id="apellidos4" size="50" />
+            </fieldset>
+            <fieldset>
+                <legend>Agrupación 02</legend>
+                <label for="dni4">DNI</label>
+                <input type="text" name="dni4" id="dni4" size="10" maxlength="9" />
+                <label for="contrasena4">Contraseña</label>
+                <input type="password" name="contrasena4" id="contrasena4" />
+            </fieldset>
+            <input class="btn" type="submit" value="Darme de alta" />
+        </form>
+        
+    </div>
+    
+</body>
+</html>

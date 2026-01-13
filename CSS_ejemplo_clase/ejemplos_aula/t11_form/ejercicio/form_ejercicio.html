@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS y formularios</title>
+    <link rel="stylesheet" href="form_ejercicio_SOL.css">
+</head>
+<body>
+    <h1>CSS y formularios</h1>
+
+    <p>Formulario adaptativo:</p>
+    <ul>
+        <li>Ancho menor 620px: apilado</li>
+        <li>Ancho mayor que 620px: dos columnas</li>
+        <li>Anho mayor que 820: limitar anchura para que no crezca.. </li>
+    </ul>
+
+    <h2>Formulario con grid</h2>
+    <form action="" class="grid">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" size="50" />
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni" size="10" maxlength="9" />
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena" />
+        <input class="btn" type="submit" value="Darme de alta" />
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* file: herencia. css */
+
+section {
+  color: blue;           /* se hereda */
+  border: 2px solid red; /* no se hereda */
+}

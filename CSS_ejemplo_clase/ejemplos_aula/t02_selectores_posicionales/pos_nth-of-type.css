@@ -1,0 +1,39 @@
+/* pos.css */
+
+/* Prueba a) 
+   (deben estar comentados el h3 y el blockquote del article)
+   se aplica a los hijos impares del artículo (y de los elementos del artículo) 
+   => al h2 incial, a los párrafos, a los strongs del prienmr párrafo */
+article :nth-child(2n+1) {
+    color:red;
+} 
+
+
+/* Prueba b)  
+   comentar regla CSS prueba a) y descomentar esta
+   se aplica a los hijos impares del artículo, ya no mira dentro de los párrafos */
+/* article > :nth-child(2n+1) {
+    color:red;
+} */
+
+/* Prueba c) 
+  comentar regla CSS prueba b) y descomentar esta
+  ya no se aplica color al h2, y parece que los párrafos alternan rojo*/
+/* article > p:nth-child(2n+1) {
+    color:red;
+}  */
+
+/* Prueba d):
+   descomentar h3  y blockquote en article 
+   y ver que ocurre con los párrafos */
+
+/* Prueba e): 
+   comentar regla prueba c) y usar nuevo selector
+    tipo:nth-of-type(): alternancia teniendo en cuenta sólo el tipo, le da igual lo que haya en medio */
+/* article > p:nth-of-type(2n) {
+    color: red;
+}  */
+
+
+
+/*la diferencia entre nth-child y nth-of-type es que child hace los grupos con lo que sea, sea p o no sea p y el primero si es p lo pone rojo y of type hace grupos de 2 solo con los p, se olvida de los demas y pone el primero en rojo*/
