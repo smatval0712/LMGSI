@@ -1,5 +1,29 @@
 /* avanzados.css */
 
+/*selectores*/
+
+h1 {
+    background-color: red;
+}
+
+/* si queremos encadenar selectores, agruparlos en un mismo estilo varios se hace asi (si eres h1 o h2 o h3 haz esto)*/
+h1,h2,h3{
+    background-color: red;
+}
+
+/* selector de clase*/
+.novedad {
+    background-color: cyan;
+}
+/*los parrafos de la clase novedad y clase urgente en amarillo*/
+p.novedad.urgente{
+    color: yellow;
+}
+
+/* ejemplo
+<p class="novedad urgente"></p> */
+
+
 
 /*atributos*/
 abbr[title]{
@@ -41,12 +65,19 @@ article > p{
     color: red;
     text-align: center;
 }
-/* adyacente, ejemplo, cuando haya un p que justo antes tiene un h1 */
+/* adyacente, ejemplo, cuando haya un p que justo antes tiene un h1 al mismo nivel*/
 h1+p,
 h2+p{
     color: lime;
 }
 
 
-/*
+/* cualquier enlace que termine en .pdf*/
+[href $=".pdf"]{
+    background-color: darkorange;
+}
 
+/*cualquier enlace que comience en https*/
+[href ^="https"]{
+    background-color: darkorange;
+}

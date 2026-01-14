@@ -1,0 +1,47 @@
+/*colores.css*/
+
+h1{
+    color: #ff0000;
+
+}
+
+h1+p {
+    color: rgb(0,255,0);
+}
+
+p{
+    color: #0af;
+}
+
+:nth-child(4) {
+    color: hsl(0,100%, 8%);
+}
+
+:nth-child(3) {
+    color: rebeccapurple;
+}
+
+
+/* medidas */
+
+h3{
+    font-size: 32px;
+}
+
+h1{
+    font-size: 3em;/*3 veces el tamaño por defecto de la letra (por defecto es 16)*/
+    margin-left: 2em;
+} 
+
+p{
+    font-size: 50%;
+}
+
+/*medidas absolutas*/
+section h2{
+    font-size: 1.5cm;
+}
+
+
+
+
