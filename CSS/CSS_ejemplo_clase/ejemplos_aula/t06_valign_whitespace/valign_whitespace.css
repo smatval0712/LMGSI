@@ -5,7 +5,7 @@ article img {
     vertical-align: default; /* probar middle, baseline (por defecto) */
 }
 
-/* en texto inline */
+/* en texto inline */ 
 article span.sub {
     vertical-align: sub;
     font-size: 70%;
