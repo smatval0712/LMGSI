@@ -13,7 +13,7 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
+    display: block; /*para que todo el ancho del boton sea el enlace, sino te tendrias que poner encima de la palabra*/
     text-decoration: none;
 }
 

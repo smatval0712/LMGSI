@@ -8,8 +8,10 @@ nav.vertical  {
 /* en horizontal con grid */
 nav.grid ul {
     display: grid;
-    /*con el siguiente atributo, ponemos tantos valores separados por "," como columnas queramos tener*/
+    /*con el siguiente atributo, ponemos tantos valores como columnas queramos tener*/
     grid-template-columns: repeat(2,1fr);
+    /* lo de arriba es lo mismo que poner esto:
+    grid-template-columns: 1fr 1fr;*/
 }
 
 /*  en horizontal con float */
@@ -27,6 +29,7 @@ nav.flex ul {
     display: flex;
 }
 nav.flex ul li {
+    /*cuando le pones el valor flex: 1 significa que todos van en horizontal que ocupen el mismo tamaño cada una*/
     flex: 1;
 }
 
