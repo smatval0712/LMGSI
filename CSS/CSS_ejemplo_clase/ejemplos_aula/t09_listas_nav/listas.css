@@ -5,7 +5,8 @@ ol {
 }
 
 ul {
-    list-style-type: square; /* disc, circle, disclosure-open/close */
+    list-style-type: square; /* disc, circle, disclosure-open/closed */
+
 }
 
 /* posición de la viñeta: en la zona de padding de la lista o en la zona de contenido 

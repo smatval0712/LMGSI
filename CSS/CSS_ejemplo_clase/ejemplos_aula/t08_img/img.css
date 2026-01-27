@@ -13,5 +13,7 @@ img.marco {
    se adapte al ancho disponible */
 img.rwd {
     width: 60%;
+    max-width: 500px;
+    min-width: 250px;
     height: auto;
 }
